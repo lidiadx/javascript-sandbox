@@ -12,7 +12,7 @@
 // logResult( 'ice cream', 'consume', 7 ); // logs the message "Is ice cream healthy to consume?", seven times
 //
 //
-// Now it's your turn!
+// From Udacity course "Front End Frameworks"
 
 
 
@@ -43,7 +43,7 @@ function template(str, delims) {
         }
     }
     var repeat = arguments[arguments.length-1];
-    for (var i = 0; i < repeat; i++){
+    for (i = 0; i < repeat; i++){
         console.log(str);
     }
     return str;
@@ -56,4 +56,4 @@ var string = "Is <<* thing *>> easy to <<* action *>> ?";
 var logResult = template(string, {open: '<<*', close: '*>>'});
 logResult("ice cream", "buy");
 
-// All tests run!
+// All tests run
