@@ -4,6 +4,7 @@ Your team names the organism, Pila aequor (P. aequor), and finds that it is only
 The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. 
 However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. 
 Your job is to create objects that simulate the DNA of P. aequor for your research team to study.
+From Codecademy Fullstack Developer Track.
 */
 // Returns a random DNA base
 const returnRandBase = () => {
