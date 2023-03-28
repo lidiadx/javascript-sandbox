@@ -1,7 +1,7 @@
 # Rock Paper Scissors 
 
-## JavaScript Console Game
+## JavaScript Browser Game
 
-Open JavaScript console and follow the instuctions. 
+Play *'Rock Paper Scissors'* in your browser.
 
 Good luck!

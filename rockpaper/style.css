@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: black;
+  color: whitesmoke
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+.scissors {
+  display: inline-block;
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.player_choices {
+  font-size: 4em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.choice {
+  position: relative;
+  display: inline-block;
+}
+
+.choice .tooltip {
+  visibility: hidden;
+  background-color: #c0e4fb;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.2em 0.4em;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -1.5em;
+}
+
+.choice:hover .tooltip {
+  visibility: visible;
+} 
+
+
+.choice:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+#playfield {
+  text-align: center;
+  padding: 3em;
+}
+
+#result {
+  text-align: center;
+}
