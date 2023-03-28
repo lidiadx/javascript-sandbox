@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balloon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1>Watch Out!</h1>
+      <p id="balloon">🎈</p>
+    </div<>
+    <script>
+      const balloon = document.getElementById('balloon');
+      balloon.style.fontSize = '16px';
+
+      function zoomIn(event) {
+        if (event.key == "ArrowUp") {
+          console.log('Up');
+          let size = Number.parseInt(balloon.style.fontSize);
+          console.log(size);
+          if (size < 150) {
+            size *= 1.1;
+            balloon.style.fontSize = size + 'px';
+          } else {
+            balloon.textContent = '💥';
+            window.removeEventListener('keyup', zoomOut);
+            window.removeEventListener('keyup', zoomIn);
+          }
+        }
+      }
+
+      function zoomOut(event) {
+        if (event.key == "ArrowDown") {
+          console.log('Down');
+          let size = Number.parseInt(balloon.style.fontSize);
+          console.log(size);
+          if (size > 10) {
+            size = size - size*0.1;
+            balloon.style.fontSize = size + 'px';
+          }  
+        }
+      }
+
+      window.addEventListener("keyup", zoomIn);
+      window.addEventListener("keyup", zoomOut);
+    </script>
+  </body>
+</html>
